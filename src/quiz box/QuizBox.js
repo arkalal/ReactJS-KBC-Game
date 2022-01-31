@@ -6,8 +6,8 @@ const QuizBox = () => {
         <div className="questions">Lorem ipsum dolor sit amet consectetur.</div>
 
         <div className="answers">
-            <div className="answer">Lorem, ipsum.</div>
-            <div className="answer">Lorem, ipsum.</div>
+            <div className="answer correct">Lorem, ipsum.</div>
+            <div className="answer wrong">Lorem, ipsum.</div>
             <div className="answer">Lorem, ipsum.</div>
             <div className="answer">Lorem, ipsum.</div>
         </div>
