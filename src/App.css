@@ -1,0 +1,46 @@
+.app{
+    height: 100vh;
+    display: flex;
+    background-color: #020230;
+    color: white;
+}
+
+.main{
+    width: 75%;
+    background: url('../public/assets/bg.jpg') center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.top{
+    flex: 50%;
+    position: relative;
+}
+
+.bottom{
+    flex: 50%;
+}
+
+.pyramid{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+}
