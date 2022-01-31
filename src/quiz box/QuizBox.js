@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './QuizBox.css'
 
-const QuizBox = () => {
+const QuizBox = ({ data, setTimeout, setQuestionNumber, questionNumber }) => {
+
+    const [Question, setQuestion] = useState(null);
+
+    useEffect(() => {
+        setQuestion(data[questionNumber - 1])
+    }, [data, questionNumber])
+
     return <div className='trivia'>
-        <div className="questions">Lorem ipsum dolor sit amet consectetur.</div>
+        <div className="questions"> {Question?.question} </div>
 
         <div className="answers">
-            <div className="answer correct">Lorem, ipsum.</div>
-            <div className="answer wrong">Lorem, ipsum.</div>
-            <div className="answer">Lorem, ipsum.</div>
-            <div className="answer">Lorem, ipsum.</div>
+            {Question?.answers.map((a) => (
+                <div className="answer"> {a.text} </div>
+            ))}
         </div>
     </div>;
 };
