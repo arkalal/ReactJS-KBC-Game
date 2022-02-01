@@ -6,7 +6,7 @@ import QuizBox from './quiz box/QuizBox';
 const App = () => {
 
     const [QuestionNumber, setQuestionNumber] = useState(1);
-    const [Timeout, setTimeout] = useState(false);
+    const [Stop, setStop] = useState(false);
 
     const data = [
         {
@@ -84,7 +84,7 @@ const App = () => {
             </div>
 
             <div className="bottom">
-                <QuizBox data={data} setTimeout={setTimeout} setQuestionNumber={setQuestionNumber} questionNumber={QuestionNumber}></QuizBox>
+                <QuizBox data={data} setStop={setStop} setQuestionNumber={setQuestionNumber} questionNumber={QuestionNumber}></QuizBox>
             </div>
         </div>
 
