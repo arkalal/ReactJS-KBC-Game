@@ -78,6 +78,11 @@ const App = () => {
         },
     ];
 
+    useEffect(() => {
+        QuestionNumber > 1 &&
+            setEarned(moneyPyramid.find((m) => m.id === QuestionNumber - 1).amount);
+    }, [QuestionNumber]);
+
     return <div className='app'>
         <div className="main">
             {
