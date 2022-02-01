@@ -17,6 +17,15 @@ const QuizBox = ({ data, setStop, setQuestionNumber, questionNumber }) => {
         setTimeout(() => {
             setClassName(a.correct ? 'answer correct' : 'answer wrong')
         }, 3000)
+
+        setTimeout(() => {
+            if (a.correct) {
+                setQuestionNumber((prev) => prev + 1)
+                setSelectedAnswer(null)
+            } else {
+                setStop(true)
+            }
+        }, 7000)
     }
 
     return <div className='trivia'>
