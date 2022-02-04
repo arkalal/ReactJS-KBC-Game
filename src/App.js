@@ -3,6 +3,7 @@ import './App.css'
 import QuizBox from './quiz box/QuizBox';
 import Timer from './timer/Timer';
 import { data } from './dataQuiz';
+import Start from './user/Start';
 
 const App = () => {
 
@@ -35,41 +36,48 @@ const App = () => {
     }, [QuestionNumber, moneyPyramid]);
 
     return <div className='app'>
-        <div className="main">
-            {
-                Stop ?
-                    (<><div className="endText">
-                        <h1>You earned: {Earned} </h1>
-                        <p className='endTextCopyright'>&copy; Developed by Arka Lal Chakravarty</p>
-                    </div></>)
-                    :
-                    (<> <div className="top">
-                        <div className="timer"> <Timer setStop={setStop} questionNumber={QuestionNumber}></Timer> </div>
+
+        {
+            Username ?
+                (<>
+                    <div className="main">
+                        {
+                            Stop ?
+                                (<><div className="endText">
+                                    <h1>You earned: {Earned} </h1>
+                                    <p className='endTextCopyright'>&copy; Developed by Arka Lal Chakravarty</p>
+                                </div></>)
+                                :
+                                (<> <div className="top">
+                                    <div className="timer"> <Timer setStop={setStop} questionNumber={QuestionNumber}></Timer> </div>
+                                </div>
+
+                                    <div className="bottom">
+                                        <QuizBox data={data} setStop={setStop} setQuestionNumber={setQuestionNumber} questionNumber={QuestionNumber}></QuizBox>
+                                    </div> </>)
+                        }
+
                     </div>
 
-                        <div className="bottom">
-                            <QuizBox data={data} setStop={setStop} setQuestionNumber={setQuestionNumber} questionNumber={QuestionNumber}></QuizBox>
-                        </div> </>)
-            }
-
-        </div>
-
-        <div className="pyramid">
-            <ul className="moneyList">
-                {moneyPyramid.map((m) => (
-                    <li
-                        className={
-                            QuestionNumber === m.id
-                                ? "moneyListItem active"
-                                : "moneyListItem"
-                        }
-                    >
-                        <span className="moneyListItemNumber">{m.id}</span>
-                        <span className="moneyListItemAmount">{m.amount}</span>
-                    </li>
-                ))}
-            </ul>
-        </div>
+                    <div className="pyramid">
+                        <ul className="moneyList">
+                            {moneyPyramid.map((m) => (
+                                <li
+                                    className={
+                                        QuestionNumber === m.id
+                                            ? "moneyListItem active"
+                                            : "moneyListItem"
+                                    }
+                                >
+                                    <span className="moneyListItemNumber">{m.id}</span>
+                                    <span className="moneyListItemAmount">{m.amount}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div></>)
+                :
+                (<Start setUsername={setUsername}></Start>)
+        }
     </div>;
 };
 
