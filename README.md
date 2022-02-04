@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# KBC Game with REACT JS - By Arkalal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# How To Play the Game!!:
 
-## Available Scripts
+1. Click the link on the right part of the about section and open the game. At First, the user registration section will popup in front of you..
 
-In the project directory, you can run:
+2. Now, input your name and click the start button to start the game once you hit start the KBC Quiz will start rolling in front of you. You will just feel like you are sitting in the hot seat!! I have made the UI excatly like the real game.
 
-### `npm start`
+3. Just like the real game, the timer will start running on the top of every questions and if you fail to give an answer within the countdown timer range then you will loose the game.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Once you loose a page will popup where you can see your earnings that you have earned on that lossing point..AND YES!! It is fully functional and works excatly like the real game..
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. While playing the game you will be able to see the money prizes on your sidebar and as you proceed with your questions one after the other you will see the reward price tab to move forward just like you see in the real game.
 
-### `npm test`
+6. Once you loose in a question, the game will automatically end and you will be rewarded with the money of your last correct question in the popup section that hits after you loose the game..
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# NOTE: Can't wait to see you play the game!! 🔥😄₹
 
-### `npm run build`
+# How the KBC Game works? Things to Know!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. The game has been developed by using only React Pure states and props drilling methods through components..
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. I have also used React Map loop function along with useRef React hooks to setup the user registration page..
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. The quiz correct wrong logic has been developed using Javascript objects to store the data of the answers of the questions along with a boolean value. The map loop has been used to get all the data and fetch it to the quiz box. 
 
-### `npm run eject`
+4. Boolean methods and if else statements has been used to setup the correct wrong asnwer logic of the game.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. The correct wrong animations has been developed with the help Vanilla CSS.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. The timer has been developed in a seperate component with the help of React pure states and useEffect Hook along with the use of setInerval() and clearInterval() functions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I hope you like my project and enjoy playing the game and you can also check all the files in my repository to find out I have developed the game using my ReactJS Skills.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THANK YOUUU!!
