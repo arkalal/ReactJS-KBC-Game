@@ -2,15 +2,25 @@
 
 # How To Play the Game!!:
 
-1. Click the link on the right part of the about section and open the game. At First, the user registration section will popup in front of you..
+1. Click the link on the right part of the about section and open the game. At First, the user registration section will popup in front of you.. Look at the sample 👇🏻
+
+![USER](/public/screenshots/user.png)
 
 2. Now, input your name and click the start button to start the game once you hit start the KBC Quiz will start rolling in front of you. You will just feel like you are sitting in the hot seat!! I have made the UI excatly like the real game.
+
+![USERDATA](/public/screenshots/userData.png)
+
+![GAMESCREEN](/public/screenshots/gameScreen.png)
 
 3. Just like the real game, the timer will start running on the top of every questions and if you fail to give an answer within the countdown timer range then you will loose the game.
 
 4. Once you loose a page will popup where you can see your earnings that you have earned on that lossing point..AND YES!! It is fully functional and works excatly like the real game..
 
+![REWARD](/public/screenshots/reward.png)
+
 5. While playing the game you will be able to see the money prizes on your sidebar and as you proceed with your questions one after the other you will see the reward price tab to move forward just like you see in the real game.
+
+![SECONDQUESTION](/public/screenshots/secondQuestion.png)
 
 6. Once you loose in a question, the game will automatically end and you will be rewarded with the money of your last correct question in the popup section that hits after you loose the game..
 
@@ -28,10 +38,14 @@
 
 5. The correct wrong animations has been developed with the help Vanilla CSS.
 
+![CORRECTANS](/public/screenshots/correctAns.png)
+
+![WRONGANS](/public/screenshots/wrongAns.png)
+
 6. The timer has been developed in a seperate component with the help of React pure states and useEffect Hook along with the use of setInerval() and clearInterval() functions.
 
 
-I hope you like my project and enjoy playing the game and you can also check all the files in my repository to find out I have developed the game using my ReactJS Skills.
+I hope you like my project and enjoy playing the game and you can also check all the files in my repository to find out how I have developed the game using my ReactJS Skills.
 
 
 THANK YOUUU!!
